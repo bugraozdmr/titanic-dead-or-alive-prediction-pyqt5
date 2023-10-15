@@ -13,7 +13,7 @@ I used XGB machine learning algorithm to predict.That gave me 63% ratio which is
 
 in order to make setup file first we need to change ui type to .py
 
-
+```
 pyuic5 app.ui -o app.py 
 pyuic5 extra_window.ui -o extra_window.py 
 
@@ -26,3 +26,4 @@ class ana(QDialog,Ui_mainDialog):
         #loadUi(r"C:\Users\bugra\OneDrive\Masaüstü\python_titanic_prediction_pyqt5\app.ui",self)
 
         self.setupUi(self)
+```
