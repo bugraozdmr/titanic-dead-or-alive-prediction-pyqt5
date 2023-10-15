@@ -29,3 +29,6 @@ class ana(QDialog,Ui_mainDialog):
 
         self.setupUi(self)
 ```
+
+
+<h2>made with ::🖤::</h2>
