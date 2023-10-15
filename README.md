@@ -1,4 +1,4 @@
-<h1 style="color⬛;">Disaster of Titanic</h1>
+<h1 style="color🟧;">Disaster of Titanic</h1>
 The Titanic, a British passenger liner that set sail on its maiden voyage in 1912, is most famous for its tragic sinking after colliding with an iceberg. This disaster resulted in one of the deadliest peacetime maritime tragedies, claiming the lives of over 1,500 passengers and crew members. The sinking of the Titanic serves as a poignant reminder of the vulnerability of even the most advanced technological achievements when faced with the forces of nature.
 
 <br>
