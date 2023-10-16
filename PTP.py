@@ -50,6 +50,11 @@ class ana(QDialog,Ui_mainDialog):
         ##send
         self.pushButton.clicked.connect(self.send)
 
+        #kadin_ekek
+        self.gender_group = QButtonGroup()
+        self.gender_group.addButton(self.radioButton_6)
+        self.gender_group.addButton(self.radioButton_7)
+
 
         # Sınıf RadioButton'ları için bir grup
         self.sinif_group = QButtonGroup()
@@ -62,14 +67,26 @@ class ana(QDialog,Ui_mainDialog):
         self.alone_group.addButton(self.radioButton)
         self.alone_group.addButton(self.radioButton_2)
 
+        # 0 kalsin
         self.sinif = 0
+        # -1 kalsin
         self.al0ne = -1
-
+        # -1 kalsin
+        self.gender =-1
 
         # Sınıf ve Ders RadioButton'larının sinyallerini bağlayın
         self.sinif_group.buttonClicked.connect(self.sinif_secildi)
         self.alone_group.buttonClicked.connect(self.alone)
+        self.gender_group.buttonClicked.connect(self.gender_choose)
 
+
+    def gender_choose(self,gendeR):
+        if gendeR is self.radioButton_6:
+            self.gender = 0
+            print(gendeR.text())
+        elif gendeR is self.radioButton_7:
+            self.gender = 1
+            print(gendeR.text())
     def sinif_secildi(self, sınıf_button):
         if sınıf_button is self.radioButton_3:
             self.sinif = 1
@@ -113,17 +130,18 @@ class ana(QDialog,Ui_mainDialog):
         x = self.sinif
         y = self.spin_box_value
         z = self.al0ne
+        k = self.gender
 
-        if((x==0) and (y==0) and (z==-1)):
+        if((x==0) and (y==0) and (z==-1) and (k==-1)):
             self.label_4.setText("Bilgi gir")
-        elif((x==0) or (y==0) or (z == -1)):
+        elif((x==0) or (y==0) or (z == -1) or (k==-1)):
             self.label_4.setText("Girilmeyen bilgi/ler var")
 
         else:
-            print(x, y, z)
+            print(x, y, z ,k)
 
             # yazdirlacak degere bakalim
-            if (predict.dondur(x, y, z) == 1):
+            if (predict.dondur(x, y, z ,k) == 1):
                 self.label_4.setText("MUHTEMELEN YAŞIYOR")
             else:
                 self.label_4.setText("MUHTEMELEN ÖLDÜ")
