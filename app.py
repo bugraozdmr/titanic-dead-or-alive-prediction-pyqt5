@@ -21,65 +21,6 @@ class Ui_mainDialog(object):
 "background-color:qlineargradient(spread:pad, x1:0.795776, y1:1, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(85, 170, 127, 255));\n"
 "}")
         self.widget.setObjectName("widget")
-        self.pushButton = QtWidgets.QPushButton(self.widget)
-        self.pushButton.setGeometry(QtCore.QRect(460, 400, 221, 51))
-        self.pushButton.setStyleSheet("font: 22pt \"MS Sans Serif\";\n"
-"color:rgb(255, 255, 255);\n"
-"border-radius:10px;\n"
-"background-color:rgb(85, 170, 127)")
-        self.pushButton.setObjectName("pushButton")
-        self.label = QtWidgets.QLabel(self.widget)
-        self.label.setGeometry(QtCore.QRect(440, 170, 131, 41))
-        self.label.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(self.widget)
-        self.label_2.setEnabled(True)
-        self.label_2.setGeometry(QtCore.QRect(360, 290, 131, 41))
-        self.label_2.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(self.widget)
-        self.label_3.setGeometry(QtCore.QRect(440, 50, 131, 41))
-        self.label_3.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.label_3.setObjectName("label_3")
-        self.label_4 = QtWidgets.QLabel(self.widget)
-        self.label_4.setGeometry(QtCore.QRect(460, 500, 571, 41))
-        self.label_4.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 0, 4)")
-        self.label_4.setText("")
-        self.label_4.setObjectName("label_4")
-        self.radioButton = QtWidgets.QRadioButton(self.widget)
-        self.radioButton.setGeometry(QtCore.QRect(520, 295, 82, 31))
-        self.radioButton.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.radioButton.setObjectName("radioButton")
-        self.radioButton_2 = QtWidgets.QRadioButton(self.widget)
-        self.radioButton_2.setGeometry(QtCore.QRect(640, 295, 101, 31))
-        self.radioButton_2.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.radioButton_2.setObjectName("radioButton_2")
-        self.spinBox_2 = QtWidgets.QSpinBox(self.widget)
-        self.spinBox_2.setGeometry(QtCore.QRect(560, 181, 81, 31))
-        self.spinBox_2.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";\n"
-"border-radius : 7px;")
-        self.spinBox_2.setObjectName("spinBox_2")
-        self.radioButton_3 = QtWidgets.QRadioButton(self.widget)
-        self.radioButton_3.setGeometry(QtCore.QRect(570, 30, 121, 31))
-        self.radioButton_3.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.radioButton_3.setObjectName("radioButton_3")
-        self.radioButton_4 = QtWidgets.QRadioButton(self.widget)
-        self.radioButton_4.setGeometry(QtCore.QRect(570, 60, 111, 31))
-        self.radioButton_4.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.radioButton_4.setObjectName("radioButton_4")
-        self.radioButton_5 = QtWidgets.QRadioButton(self.widget)
-        self.radioButton_5.setGeometry(QtCore.QRect(570, 90, 111, 31))
-        self.radioButton_5.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-"color:rgb(255, 255, 255)")
-        self.radioButton_5.setObjectName("radioButton_5")
         self.open_extra_window_button = QtWidgets.QPushButton(self.widget)
         self.open_extra_window_button.setGeometry(QtCore.QRect(1000, 20, 171, 41))
         self.open_extra_window_button.setStyleSheet("font: 22pt \"MS Sans Serif\";\n"
@@ -88,6 +29,80 @@ class Ui_mainDialog(object):
 "background-color:rgba(0,0,0,100);\n"
 "border-color: #ff0000;")
         self.open_extra_window_button.setObjectName("open_extra_window_button")
+        self.radioButton_5 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_5.setGeometry(QtCore.QRect(580, 220, 111, 31))
+        self.radioButton_5.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_5.setObjectName("radioButton_5")
+        self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton.setGeometry(QtCore.QRect(470, 530, 221, 51))
+        self.pushButton.setStyleSheet("font: 22pt \"MS Sans Serif\";\n"
+"color:rgb(255, 255, 255);\n"
+"border-radius:10px;\n"
+"background-color:rgb(85, 170, 127)")
+        self.pushButton.setObjectName("pushButton")
+        self.label_4 = QtWidgets.QLabel(self.widget)
+        self.label_4.setGeometry(QtCore.QRect(470, 630, 571, 41))
+        self.label_4.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 0, 4)")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.radioButton = QtWidgets.QRadioButton(self.widget)
+        self.radioButton.setGeometry(QtCore.QRect(530, 425, 82, 31))
+        self.radioButton.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton.setObjectName("radioButton")
+        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2.setEnabled(True)
+        self.label_2.setGeometry(QtCore.QRect(370, 420, 131, 41))
+        self.label_2.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.widget)
+        self.label_3.setGeometry(QtCore.QRect(450, 180, 131, 41))
+        self.label_3.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.label_3.setObjectName("label_3")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setGeometry(QtCore.QRect(450, 300, 131, 41))
+        self.label.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.label.setObjectName("label")
+        self.radioButton_2 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_2.setGeometry(QtCore.QRect(650, 425, 101, 31))
+        self.radioButton_2.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.radioButton_4 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_4.setGeometry(QtCore.QRect(580, 190, 111, 31))
+        self.radioButton_4.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_4.setObjectName("radioButton_4")
+        self.spinBox_2 = QtWidgets.QSpinBox(self.widget)
+        self.spinBox_2.setGeometry(QtCore.QRect(570, 311, 81, 31))
+        self.spinBox_2.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";\n"
+"border-radius : 7px;")
+        self.spinBox_2.setObjectName("spinBox_2")
+        self.radioButton_3 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_3.setGeometry(QtCore.QRect(580, 160, 121, 31))
+        self.radioButton_3.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_3.setObjectName("radioButton_3")
+        self.label_5 = QtWidgets.QLabel(self.widget)
+        self.label_5.setGeometry(QtCore.QRect(450, 60, 131, 41))
+        self.label_5.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.label_5.setObjectName("label_5")
+        self.radioButton_6 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_6.setGeometry(QtCore.QRect(580, 40, 121, 31))
+        self.radioButton_6.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_6.setObjectName("radioButton_6")
+        self.radioButton_7 = QtWidgets.QRadioButton(self.widget)
+        self.radioButton_7.setGeometry(QtCore.QRect(580, 80, 121, 31))
+        self.radioButton_7.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 255, 255)")
+        self.radioButton_7.setObjectName("radioButton_7")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -95,13 +110,16 @@ class Ui_mainDialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.open_extra_window_button.setText(_translate("Dialog", "INFO"))
+        self.radioButton_5.setText(_translate("Dialog", "3.SINIF"))
         self.pushButton.setText(_translate("Dialog", "SONUCU GÖR"))
-        self.label.setText(_translate("Dialog", "YAŞI"))
+        self.radioButton.setText(_translate("Dialog", "EVET"))
         self.label_2.setText(_translate("Dialog", "YALNIZ MI"))
         self.label_3.setText(_translate("Dialog", "SINIFI"))
-        self.radioButton.setText(_translate("Dialog", "EVET"))
+        self.label.setText(_translate("Dialog", "YAŞI"))
         self.radioButton_2.setText(_translate("Dialog", "HAYIR"))
-        self.radioButton_3.setText(_translate("Dialog", "1.SINIF"))
         self.radioButton_4.setText(_translate("Dialog", "2.SINIF"))
-        self.radioButton_5.setText(_translate("Dialog", "3.SINIF"))
-        self.open_extra_window_button.setText(_translate("Dialog", "INFO"))
+        self.radioButton_3.setText(_translate("Dialog", "1.SINIF"))
+        self.label_5.setText(_translate("Dialog", "CİNSİYET"))
+        self.radioButton_6.setText(_translate("Dialog", "KADIN"))
+        self.radioButton_7.setText(_translate("Dialog", "ERKEK"))
