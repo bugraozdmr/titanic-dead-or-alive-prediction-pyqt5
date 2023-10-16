@@ -3,7 +3,7 @@ The Titanic, a British passenger liner that set sail on its maiden voyage in 191
 
 <br>
 <br>
-I used XGB machine learning algorithm to predict.That gave me 63% ratio which is pretty low.If you want to change parametres I used go ahead.I may find some other parametres in time and after that I can update my code.For now thats all.I may seem like obsessed with Titanic but I really like history of it.
+I used XGB machine learning algorithm to predict.That gave me 74% ratio which is pretty low.If you want to change parametres I used go ahead.I may find some other parametres in time and after that I can update my code.For now thats all.I may seem like obsessed with Titanic but I really like history of it.
 
 
 
