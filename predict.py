@@ -1,4 +1,5 @@
 import xgboost as xgb
+import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.metrics import accuracy_score
 import pandas as pd
@@ -8,9 +9,9 @@ from xgboost import XGBClassifier
 
 
 # setimi cekiyorum
-df = pd.read_csv("corrected_df")
+df = pd.read_csv("real_corrected_df")
 
-df.drop(["parch","fare","adult_Or_not"],axis=1,inplace=True)
+df.drop(["parch","fare"],axis=1,inplace=True)
 
 #setimi bagimli bagimsiz ayiriyorum
 
@@ -40,32 +41,36 @@ xgb_cv.best_params_
 # alpha degeri eklenmeden sorunlu calisiyordu
 # parametre onemli
 xgb_tuned = XGBClassifier(
-        alpha=0,
-        colsample_bytree=1.0,
-        gamma=0.2,
-        # lambda = 0.1,
-        learning_rate=0.3,
-        max_depth=7,
-        min_child_weight=1,
-        n_estimators=100,
-        scale_pos_weight=1,
-        subsample=0.6
+    alpha=0,
+    colsample_bytree=0.8,
+    gamma=0,
+    learning_rate=0.01,
+    max_depth=3,
+    min_child_weight=5,
+    n_estimators=500,
+    scale_pos_weight=1,
+    subsample=0.6
 
 ).fit(X_train , y_train)
 
 
-# 0.63 dogruluk orani
+# 0.7454545454545455 dogruluk orani
 
 
 
-def dondur(a,b,c):
+def dondur(a,b,c,d):
 
     # float olmasi sart
-    data_to_predict = [float(a), float(b), float(c)]
+    data_to_predict = [a,b,c,d]
 
+    # parantezle cagirmayinca bile hata aldim
+    # [data_to_predict]
     # Tahmin yapmak
     prediction = xgb_tuned.predict([data_to_predict])
 
+
+
     print(prediction[0])
     return prediction[0]
+
 
